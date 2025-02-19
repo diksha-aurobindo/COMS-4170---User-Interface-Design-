@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Home Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Blue Header */
+        .header-container {
+            background-color: lightblue;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            /* font-weight: bold; */
+        }
+
+        /* Grey Menu */
+        .menu-container {
+            background-color: #BEBEBE;
+            text-align: left;
+            padding: 15px;
+        }
+
+        .menu-container div {
+            display: inline-block;
+            margin-right: 20px;
+            font-size: 16px;
+            /* font-weight: bold; */
+            cursor: pointer;
+        }
+
+        .menu-container div:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Header */
+        .section-header {
+            font-size: 22px;
+            margin-top: 20px;
+            /* margin-left: 15px; */
+            text-align: left;
+        }
+
+        /* Title Styling */
+        .title-container {
+            font-size: 18px;
+            /* font-weight: bold; */
+            margin-top: 10px;
+            margin-left: 15px;
+            text-align: left;
+        }
+
+        /* Featured Section */
+        .featured-container {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 30px;
+        }
+
+        /* Image Container */
+        .image-container {
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        /* Fixed Image Size */
+        .fixed-size-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Titles above images */
+        .image-title {
+            font-size: 16px;
+            /* font-weight: bold; */
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        /* Adjust row spacing */
+        .row.image-row {
+            justify-content: start;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="container-fluid header-container">
+        What's happening?
+    </div>
+
+    <!-- Menu Section -->
+    <div class="container-fluid menu-container">
+        <div>Home</div>
+        <div>About</div>
+        <div>Submission Deadline</div>
+        <div>FAQ</div>
+        <div>Contact</div>
+    </div>
+
+    <!-- Section Header -->
+    <div class="container-fluid section-header">
+        Section header
+    </div>
+
+    <!-- Title1
+    <div class="container-fluid title-container">title1</div> -->
+
+    <!-- Title1 with Image & 6-column width -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 image-container">
+              <div class="image-title">title1</div>
+              <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Title2, Title3, Title4 with Images -->
+    <div class="container-fluid">
+        <div class="row image-row">
+            <!-- Title 2 + Image -->
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="image-title">title2</div>
+                <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+
+            <!-- Title 3 + Image -->
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="image-title">title3</div>
+                <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+
+            <!-- Title 4 + Image -->
+            <div class="col-md-3 col-sm-6 col-6">
+                <div class="image-title">title4</div>
+                <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 featured-container">
+                Featured
+            </div>
+        </div>
+    </div>
+
+    <!-- Title5, Title6, Title7 with Images -->
+    <div class="container-fluid">
+        <div class="row image-row">
+            <!-- Title 5 + Image -->
+            <div class="col-md-4 col-sm-6 col-6">
+                <div class="image-title">title5</div>
+                <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+
+            <!-- Title 6 + Image -->
+            <div class="col-md-4 col-sm-6 col-6">
+                <div class="image-title">title6</div>
+                <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+
+            <!-- Title 7 + Image -->
+            <div class="col-md-4 col-sm-6 col-6">
+                <div class="image-title">title7</div>
+                <img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" alt="Columbia University" class="fixed-size-img">
+            </div>
+        </div>
+
+                <!-- Grid Within Grid Section in a New Row -->
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-6">
+                <div class="image-title">Grid Within Grid</div>
+                
+                <!-- Nested Grid (3 images per row, 3 rows total = 9 images) -->
+                <div class="row">
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                    <div class="col-4"><img src="http://coms4170.cs.columbia.edu/2020-spring/hw/hw2/columbia.jpg" class="fixed-size-img"></div>
+                </div>
+            </div>
+        </div>

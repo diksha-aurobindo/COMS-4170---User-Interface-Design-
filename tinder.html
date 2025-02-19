@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Profile</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 360px;
+            text-align: center;
+        }
+
+        /* Tinder Logo */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .logo {
+            width: 140px;
+        }
+
+        /* Separator Line */
+        .separator {
+            width: 100%;
+            max-width: 360px;
+            height: 1px;
+            background-color: #ddd;
+            margin: 5px auto 15px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            padding-bottom: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Profile Image */
+        .profile-image {
+            width: 100%;
+            display: block;
+            border-radius: 20px 20px 0 0;
+        }
+
+        /* Profile Info */
+        .profile-info {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+            display: flex;
+            align-items: center;
+        }
+
+        .age {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 5px;
+            color: #444;
+        }
+
+        .verified {
+            width: 18px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        .subtext {
+            font-size: 14px;
+            color: #777;
+            margin-top: 3px;
+        }
+
+        /* Like Button (Separated and Styled) */
+        .like-button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .like-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #d8d8d8;
+            border-radius: 30px;
+            padding: 12px;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            width: 75%;
+            margin: 0 auto;
+            box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.15);
+        }
+
+        .like-button img {
+            width: 18px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tinder Logo -->
+        <div class="logo-container">
+            <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_logo.png" alt="Tinder Logo" class="logo">
+        </div>
+        
+        <!-- Separator Line -->
+        <div class="separator"></div>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <div>
+                <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_person.png" alt="Profile Picture" class="profile-image">
+            </div>
+            <div class="profile-info">
+                <div class="name">
+                    Sean Rad, <span class="age">29</span>
+                    <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_verified.png" alt="Verified" class="verified">
+                </div>
+                <div class="subtext">Verified</div>
+            </div>
+        </div>
+
+        <!-- Like Button (Separated and More Rounded) -->
+        <div class="like-button-container">
+            <div class="like-button">
+                <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/heart.png" alt="Heart Icon">
+                Like Me On Tinder
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
